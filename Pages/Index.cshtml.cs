@@ -9,11 +9,12 @@ namespace firstApp.Pages
 {
     public class IndexModel : PageModel
     {
-
-        public static string helloThere = "Hello There";
+        public string hello = "Hello There";
         public void OnGet()
         {
-            
+            // PageModel.hello = "Hello There";
+            Console.Write("This is where the fun begins!");
+            // Console.BackgroundColor = "red";
         }
     }
 }
