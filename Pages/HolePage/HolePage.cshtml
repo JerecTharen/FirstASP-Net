@@ -1,0 +1,13 @@
+﻿@page "/HolePage/{holeNum:int}"
+@model HolePageModel
+@{
+}
+
+<h1>#@Model.Hole.HoleNum</h1>
+<h2>Par: @Model.Hole.Par</h2>
+<h3>Tee-Type: @Model.Hole.Tee</h3>
+<h3>Your score: @Model.PlayerScore</h3>
+<form method="get">
+    <input asp-for="PlayerScore" name="ViewPlayerScore" />
+    <button type="submit">CHANGE SCORE</button>
+</form>

@@ -1,0 +1,34 @@
+@page "/Scorecard"
+@model ScorecardModel
+@{
+    <!-- viewData["Title"] = "Scorecard"; -->
+}
+
+<div>
+    <h1>Scorecard 1</h1>
+</div>
+
+<h2>Temp</h2>
+<form method="get">
+    <div class="form-group">
+        <div class="input-goup">
+            <input name="searchTerm" type="number" class="form-control" asp-for="UserSearchTerm" />
+            <span class="input-group-btn">
+                <button type="submit">SUBMIT</button>
+            </span>
+        </div>
+    </div>
+</form>
+
+<div class="holes">
+    @foreach (var hole in Model.Holes)
+    {
+        <div class="hole">
+            <p>#@hole.HoleNum</p>
+            <p>Par: @hole.Par</p>
+            <div>
+                <a asp-page="/HolePage/HolePage" asp-route-holeNum="@hole.HoleNum">Details</a>
+            </div>
+        </div>
+    }
+</div>

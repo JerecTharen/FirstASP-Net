@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/jerec/Learning/ASP-Dot-Net/firstApp/Services/Scorecard.Core/Scorecard.Core.csproj": {}
+  },
+  "projects": {
+    "/home/jerec/Learning/ASP-Dot-Net/firstApp/Services/Scorecard.Core/Scorecard.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jerec/Learning/ASP-Dot-Net/firstApp/Services/Scorecard.Core/Scorecard.Core.csproj",
+        "projectName": "Scorecard.Core",
+        "projectPath": "/home/jerec/Learning/ASP-Dot-Net/firstApp/Services/Scorecard.Core/Scorecard.Core.csproj",
+        "packagesPath": "/home/jerec/.nuget/packages/",
+        "outputPath": "/home/jerec/Learning/ASP-Dot-Net/firstApp/Services/Scorecard.Core/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/jerec/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
