@@ -31,3 +31,4 @@
 /home/jerec/Learning/ASP-Dot-Net/firstApp/obj/Debug/netcoreapp2.2/Razor/Pages/Scorecard/Scorecard.g.cshtml.cs
 /home/jerec/Learning/ASP-Dot-Net/firstApp/obj/Debug/netcoreapp2.2/Razor/Pages/Login/Login.g.cshtml.cs
 /home/jerec/Learning/ASP-Dot-Net/firstApp/obj/Debug/netcoreapp2.2/Razor/Pages/HolePage/HolePage.g.cshtml.cs
+/home/jerec/Learning/ASP-Dot-Net/firstApp/obj/Debug/netcoreapp2.2/Razor/Pages/EditHole/EditHole.g.cshtml.cs

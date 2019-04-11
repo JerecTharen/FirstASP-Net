@@ -26,8 +26,16 @@
         <div class="hole">
             <p>#@hole.HoleNum</p>
             <p>Par: @hole.Par</p>
+            <p>Score: @hole.PlayerScore</p>
             <div>
                 <a asp-page="/HolePage/HolePage" asp-route-holeNum="@hole.HoleNum">Details</a>
+            </div>
+            <div>
+                <a
+                asp-page="/EditHole/EditHole"
+                asp-route-holeNum="@hole.HoleNum">
+                    Edit
+                </a>
             </div>
         </div>
     }

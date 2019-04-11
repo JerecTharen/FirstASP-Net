@@ -1,0 +1,12 @@
+﻿@page "/EditHole/{holeNum:int}"
+@model EditHoleModel
+@{
+}
+
+<h1>@Model.Hole.HoleNum</h1>
+
+<form method="post">
+    <select asp-for="Hole.Tee" asp-item="Model.Tees"></select>
+    <input asp-for="Hole.PlayerScore" />
+    <button type="submit">SAVE</button>
+</form>
