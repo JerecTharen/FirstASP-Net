@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Scorecard.Core
 {
@@ -13,6 +14,7 @@ namespace Scorecard.Core
             Pro,
         }
 
+        [Required]
         public int HoleNum { get; set;}
         public TeeType Tee {get; set;}
         public int Par {get; set;}

@@ -11,6 +11,8 @@ namespace Golf.Data
         IEnumerable<GolfHole> GetAll();
         IEnumerable<GolfHole> GetHolesByName(int holeId);
         GolfHole GetHoleByNum(int holeNum);
+        GolfHole UpdateHole(GolfHole updatedHole);
+        int Commit();
     }
 
     public class InMemoryGolfHoleData: IGolfData
@@ -38,6 +40,18 @@ namespace Golf.Data
 
         public GolfHole GetHoleByNum (int holeNum){
             return holes.SingleOrDefault(h => h.HoleNum == holeNum);
+        }
+
+        public GolfHole UpdateHole (GolfHole updatedHole){
+            GolfHole hole = holes.SingleOrDefault(h => h.HoleNum == updatedHole.HoleNum);
+            if(hole != null){
+                hole.PlayerScore = updatedHole.PlayerScore;
+            }
+            return hole;
+        }
+
+        public int Commit(){
+            return 5;
         }
     }
 }
